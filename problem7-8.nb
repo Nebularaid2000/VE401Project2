@@ -1,0 +1,196 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6327,        186]
+NotebookOptionsPosition[      5924,        171]
+NotebookOutlinePosition[      6279,        187]
+CellTagsIndexPosition[      6236,        184]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "67", ",", "144", ",", "230", ",", "306", ",", "377", ",", 
+       "453", ",", "539", ",", "618", ",", "686", ",", "764", ",", "839", ",",
+        "915"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "87", ",", "173", ",", "265", ",", "346", ",", "421", ",", 
+       "502", ",", "592", ",", "675", ",", "746", ",", "826", ",", "905", ",",
+        "984"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "107", ",", "201", ",", "300", ",", "386", ",", "466", ",", 
+       "550", ",", "644", ",", "731", ",", "805", ",", "888", ",", "970", ",",
+        "1052"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", "94", ",", "166", ",", "254", ",", "325", ",", "399", ",", 
+       "485", ",", "565", ",", "651", ",", "729", ",", "819", ",", "896", ",",
+        "1004"}], "}"}]}], "}"}], ",", 
+   RowBox[{"Ticks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", 
+        "8", ",", "9", ",", "10", ",", "11", ",", "12"}], "}"}], ",", 
+      "Automatic"}], "}"}]}], ",", 
+   RowBox[{"AxesStyle", "\[Rule]", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Black", ",", "1"}], "]"}]}], ",", " ", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<by the beginning of ith Month\>\"", ",", " ", 
+      "\"\<number of fatal shootings\>\""}], "}"}]}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "13"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1100"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"PlotStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Dashed", ",", "Dashed", ",", "Dashed", ",", "Thick"}], "}"}]}], 
+   ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<lower bound of PI\>\"", ",", "\"\<predicted value\>\"", ",", 
+        "\"\<upper bound of PI\>\"", ",", "\"\<real value\>\""}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Scaled", "[", 
+         RowBox[{"{", 
+          RowBox[{"0.1", ",", "1"}], "}"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"d", "=", 
+  RowBox[{"Import", "[", 
+   RowBox[{"\"\<2020.dat\>\"", ",", "\"\<Data\>\""}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.797162547875143*^9, 
+  3.7971625737131305`*^9}},ExpressionUUID->"df6ad476-50b0-41f9-a32d-\
+a996cb49a569"],
+
+Cell[BoxData[{
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{"d", ",", " ", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<by the beginning of ith day\>\"", ",", " ", 
+      "\"\<number of fatal shootings\>\""}], "}"}]}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "366"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "1100"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"PlotStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Dashed", ",", "Dashed", ",", "Dashed"}], "}"}]}], ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<lower bound of PI\>\"", ",", "\"\<expected value\>\"", ",", 
+        "\"\<upper bound of PI\>\""}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Scaled", "[", 
+         RowBox[{"{", 
+          RowBox[{"0.1", ",", "1"}], "}"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"d1", "=", 
+  RowBox[{"Import", "[", 
+   RowBox[{"\"\<419.dat\>\"", ",", "\"\<Data\>\""}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{"d1", ",", " ", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", " ", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<by the beginning of ith day\>\"", ",", " ", 
+      "\"\<number of fatal shootings\>\""}], "}"}]}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"1", ",", "110"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0", ",", "400"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"PlotStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Dashed", ",", "Dashed", ",", "Dashed", ",", "Thick"}], "}"}]}], 
+   ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<lower bound of PI\>\"", ",", "\"\<expected value\>\"", ",", 
+        "\"\<upper bound of PI\>\"", ",", "\"\<real value\>\""}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Scaled", "[", 
+         RowBox[{"{", 
+          RowBox[{"0.1", ",", "1"}], "}"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], "]"}]}]}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.797162621720975*^9, 
+  3.797162635033211*^9}},ExpressionUUID->"b13e037f-5a58-4bf9-ad3c-\
+40fcfb6a8607"]
+},
+WindowSize->{759, 553},
+WindowMargins->{{Automatic, 83}, {24, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:67086\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 2762, 73, 361, "Input",ExpressionUUID->"df6ad476-50b0-41f9-a32d-a996cb49a569"],
+Cell[3323, 95, 2597, 74, 452, "Input",ExpressionUUID->"b13e037f-5a58-4bf9-ad3c-40fcfb6a8607"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
